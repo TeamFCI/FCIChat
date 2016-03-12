@@ -33,6 +33,7 @@ public class FortressCombat extends JavaPlugin {
 		pm.registerEvents(new PlayerJoinListener(), this);
 		pm.registerEvents(new PlayerChatListener(), this);
 		pm.registerEvents(new PlayerQuitListener(), this);
+		pm.registerEvents(new PluginEnableListener(), this);
 		CombatCast command1 = new CombatCast(this);
 		getCommand("combatcast").setExecutor(command1);
 		getCommand("cc").setExecutor(command1);
