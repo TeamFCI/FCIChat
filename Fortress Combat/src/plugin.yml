@@ -1,0 +1,15 @@
+name: FCIChat
+version: 1.2
+author: Filip Zocktan
+main: me.filipzocktan.fortresscombat1.FortressCombat
+commands:
+  combatcast:
+    description: Sendet eine Combat-Cast-Nachricht
+  cc:
+    description: Sendet eine Combat-Cast-Nachricht
+  fcic:
+    description: Zeigt Plugininfo an.
+  fcichat:
+    description: Zeigt Plugininfo an.
+  fortresscombat1chat:
+    description: Zeigt Plugininfo an.
