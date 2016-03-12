@@ -35,12 +35,12 @@ public class FortressCombat extends JavaPlugin {
 		pm.registerEvents(new PlayerQuitListener(), this);
 		pm.registerEvents(new PluginEnableListener(), this);
 		CombatCast command1 = new CombatCast(this);
-		getCommand("combatcast").setExecutor(command1);
-		getCommand("cc").setExecutor(command1);
+		this.getCommand("combatcast").setExecutor(command1);
+		this.getCommand("cc").setExecutor(command1);
 		FCICCommand command2 = new FCICCommand();
-		getCommand("fcic").setExecutor(command2);
-		getCommand("fortresscombat1chat").setExecutor(command2);
-		getCommand("fcichat").setExecutor(command2);
+		this.getCommand("fcic").setExecutor(command2);
+		this.getCommand("fortresscombat1chat").setExecutor(command2);
+		this.getCommand("fcichat").setExecutor(command2);
 		System.out.println("FCI Chat aktiv.");
 	}
 
