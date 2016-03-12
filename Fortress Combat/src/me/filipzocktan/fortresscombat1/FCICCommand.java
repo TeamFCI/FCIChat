@@ -14,12 +14,12 @@ public class FCICCommand implements CommandExecutor {
 			 p.sendMessage("§a§l *-*-*-*-*-*-*-*-*-*-*-*");
 			if (p.hasPermission("fci.fci")) {
 				p.sendMessage(
-						"§f[§FCIChat§f] §2/cc [Nachricht mit Leerzeichen] oder /combatcast [Nachricht mit Leerzeichen] zum Senden von Servernachrichten.");
+						"§f[§aFCIChat§f] §2/cc [Nachricht mit Leerzeichen] oder /combatcast [Nachricht mit Leerzeichen] zum Senden von Servernachrichten.");
 				p.sendMessage(
-						"§f[§FCIChat§f] §2Bitte keine \"*\"-Permissions verwenden, bzw. die Permissions \"-fci.team.'falschesteam1'\" & \"-fci.team.'faschesteam2'\"");
+						"§f[§aFCIChat§f] §2Bitte keine \"*\"-Permissions verwenden, bzw. die Permissions \"-fci.team.'falschesteam1'\" & \"-fci.team.'faschesteam2'\"");
 			}
-			p.sendMessage("§f[§FCIChat§f] §2Nachrichten mit \"@all\" zum Senden von Globalnachrichten.");
-			p.sendMessage("§f[§FCIChat§f] §2Ansonsten bleiben die Nachrichten innerhalb eures Teams.");
+			p.sendMessage("§f[§aFCIChat§f] §2Nachrichten mit \"@all\" zum Senden von Globalnachrichten.");
+			p.sendMessage("§f[§aFCIChat§f] §2Ansonsten bleiben die Nachrichten innerhalb eures Teams.");
              p.sendMessage("§a§l *-*-*-*-*-*-*-*-*-*-*-*");
 		}
 		return false;
