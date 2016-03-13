@@ -1,11 +1,11 @@
-package me.filipzocktan.fortresscombat1.chatmanager;
+package de.teamfci.fcichat.chatmanager;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import me.filipzocktan.fortresscombat1.FortressCombat;
+import de.teamfci.fcichat.FortressCombat;
 
 public class CombatCast implements CommandExecutor {
 	public static String noPerm = "§cDu hast keine Permission dazu!";

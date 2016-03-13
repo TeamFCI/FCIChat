@@ -1,4 +1,4 @@
-package me.filipzocktan.fortresscombat1.chatmanager;
+package de.teamfci.fcichat.chatmanager;
 
 public enum ChatChannel {
  CHANNEL_GREEN("Team Grün","[-GRTeam-]"),

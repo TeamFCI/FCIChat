@@ -1,4 +1,4 @@
-package me.filipzocktan.fortresscombat1.chatmanager;
+package de.teamfci.fcichat.chatmanager;
 
 import java.util.LinkedList;
 import java.util.List;

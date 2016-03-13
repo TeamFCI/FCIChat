@@ -1,7 +1,7 @@
 name: FCIChat
 version: 1.3
-author: Filip Zocktan
-main: me.filipzocktan.fortresscombat1.FortressCombat
+author: Filip Zocktan & HappyHappyBoy
+main: de.teamfci.fcichat.FortressCombat
 commands:
   combatcast:
     description: Sendet eine Combat-Cast-Nachricht

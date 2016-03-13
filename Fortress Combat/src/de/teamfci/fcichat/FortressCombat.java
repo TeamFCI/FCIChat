@@ -1,12 +1,12 @@
-package me.filipzocktan.fortresscombat1;
+package de.teamfci.fcichat;
 
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.filipzocktan.fortresscombat1.chatmanager.CombatCast;
-import me.filipzocktan.fortresscombat1.chatmanager.PlayerChatListener;
-import me.filipzocktan.fortresscombat1.chatmanager.PlayerJoinListener;
-import me.filipzocktan.fortresscombat1.chatmanager.PlayerQuitListener;
+import de.teamfci.fcichat.chatmanager.CombatCast;
+import de.teamfci.fcichat.chatmanager.PlayerChatListener;
+import de.teamfci.fcichat.chatmanager.PlayerJoinListener;
+import de.teamfci.fcichat.chatmanager.PlayerQuitListener;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package me.filipzocktan.fortresscombat1;
+package de.teamfci.fcichat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.PluginEnableEvent;
 
-import me.filipzocktan.fortresscombat1.chatmanager.Channel;
+import de.teamfci.fcichat.chatmanager.Channel;
 
 public class PluginEnableListener implements Listener {
     public PluginEnableListener() {

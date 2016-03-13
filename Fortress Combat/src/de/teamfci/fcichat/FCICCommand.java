@@ -1,4 +1,4 @@
-package me.filipzocktan.fortresscombat1;
+package de.teamfci.fcichat;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
