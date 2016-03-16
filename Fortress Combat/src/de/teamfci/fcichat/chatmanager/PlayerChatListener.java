@@ -23,7 +23,7 @@ public class PlayerChatListener implements Listener {
 		if (e.getMessage().startsWith("@all")) {
 			
 			String msg = e.getMessage().replaceAll("@all", "");
-			msg = e.getPlayer().getName() + " " + msg;
+			msg = e.getPlayer().getDisplayName() + "" + msg;
 			Channel.chatGlobal(msg);
 			e.setCancelled(true);
 			
@@ -46,7 +46,7 @@ public class PlayerChatListener implements Listener {
 			if(channel.size() != 1) {
 				for (Player p2 : channel) {
 					if(p2 != p) {
-						p2.sendMessage(p.getName() + "§b | " + prefix +  " §f» §b" + e.getMessage());
+						p2.sendMessage(p.getDisplayName() + "§b | " + prefix +  " §f» §b" + e.getMessage());
 					}
 				}
 				p.sendMessage("§fDU §b| " + prefix + " §f» §b" + e.getMessage());
