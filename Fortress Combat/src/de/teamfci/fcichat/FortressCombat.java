@@ -1,8 +1,11 @@
 package de.teamfci.fcichat;
 
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.teamfci.fcichat.chatmanager.Channel;
 import de.teamfci.fcichat.chatmanager.CombatCast;
 import de.teamfci.fcichat.chatmanager.PlayerChatListener;
 import de.teamfci.fcichat.chatmanager.PlayerJoinListener;
@@ -42,6 +45,30 @@ public class FortressCombat extends JavaPlugin {
 		this.getCommand("fortresscombat1chat").setExecutor(command2);
 		this.getCommand("fcichat").setExecutor(command2);
 		System.out.println("FCI Chat aktiv.");
+		for(Player p : Bukkit.getOnlinePlayers()){
+
+    		try {
+    			Channel.blue.remove(p);
+    			Channel.red.remove(p);
+    			Channel.green.remove(p);
+    		} catch (Exception ex) {
+    		}
+        	
+        	
+        	if(p.hasPermission("fci.team.green")){
+    			Channel.green.add(p);
+    		}else{
+    			if(p.hasPermission("fci.team.blue")){
+    				Channel.blue.add(p);
+    			}else{
+    				if(p.hasPermission("fci.team.red")){
+    					Channel.red.add(p);
+    				}else{
+    					p.sendMessage("§cFehler: Bitte lasse dich von einem Admin zu einem Team zuweisen!");
+    				}
+    			}
+    		}
+        }
 	}
 
 	/**

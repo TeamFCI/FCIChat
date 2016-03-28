@@ -23,7 +23,7 @@ public class PlayerChatListener implements Listener {
 		if (e.getMessage().startsWith("@all")) {
 			
 			String msg = e.getMessage().replaceAll("@all", "");
-			msg = e.getPlayer().getDisplayName() + "" + msg;
+			msg = e.getPlayer().getDisplayName() + " §5» §f" + msg;
 			Channel.chatGlobal(msg);
 			e.setCancelled(true);
 			
@@ -43,16 +43,14 @@ public class PlayerChatListener implements Listener {
 				prefix = Channel.pr;
 			}
 			prefix = prefix.replace("-GRTeam-",  "§aTeam§b").replace("-BLTeam-",  "§bTeam§b").replace("-RTeam-",  "§cTeam§b");
-			if(channel.size() != 1) {
+			
 				for (Player p2 : channel) {
-					if(p2 != p) {
-						p2.sendMessage(p.getDisplayName() + "§b | " + prefix +  " §f» §b" + e.getMessage());
-					}
+					
+						p2.sendMessage(p.getDisplayName() + " " + prefix +  " §5» §f" + e.getMessage());
+			
 				}
-				p.sendMessage("§fDU §b| " + prefix + " §f» §b" + e.getMessage());
-			} else {
-				p.sendMessage("§fDU §b| " + prefix + " §f» §b" + e.getMessage());
-			}
+				
+			
 		}
 	}
 

@@ -1,9 +1,9 @@
 package de.teamfci.fcichat.chatmanager;
 
 public enum ChatChannel {
- CHANNEL_GREEN("Team Grün","[-GRTeam-]"),
- CHANNEL_BLUE("Team Blau","[-BLTeam-]"),
- CHANNEL_RED("Team Rot","[-RTeam-]"),
+ CHANNEL_GREEN("Team Grün","§b[-GRTeam-]"),
+ CHANNEL_BLUE("Team Blau","§b[-BLTeam-]"),
+ CHANNEL_RED("Team Rot","§b[-RTeam-]"),
  CHANNEL_GLOBAL("Globaler Chat","[Global]");
 	
 
