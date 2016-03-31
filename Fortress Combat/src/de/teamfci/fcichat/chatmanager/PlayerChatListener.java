@@ -42,7 +42,7 @@ public class PlayerChatListener implements Listener {
 				channel = Channel.red;
 				prefix = Channel.pr;
 			}
-			prefix = prefix.replace("-GRTeam-",  "§aTeam§b").replace("-BLTeam-",  "§bTeam§b").replace("-RTeam-",  "§cTeam§b");
+			prefix = prefix.replace("-GRTeam-",  "§aTeam§6").replace("-BLTeam-",  "§bTeam§6").replace("-RTeam-",  "§cTeam§6");
 			
 				for (Player p2 : channel) {
 					
